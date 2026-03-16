@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About | Lubrinum</title>
+    <link rel="icon" type="image/svg+xml" href="element/logo/logo-icon.svg" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#D00000',
+                        secondary: '#191970',
+                        brandLight: '#F5F9FA',
+                        brandDark: '#020000',
+                        brandGray: '#151515',
+                    },
+                    fontFamily: {
+                        sans: ['"Sofia Sans"', 'sans-serif'],
+                        heading: ['"Work Sans"', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'none': '0',
+                        'sm': '0.125rem',
+                        'DEFAULT': '4px',
+                        'md': '0.375rem',
+                        'lg': '0.5rem',
+                        'full': '9999px',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body class="antialiased selection:bg-primary selection:text-brandDark">
+    <div id="app">
+        <!-- BEGIN: Navigation -->
+        <nav class="fixed top-0 w-full z-50 bg-brandDark/80 backdrop-blur-md border-b border-white/10"
+            data-purpose="main-navigation">
+            <div class="max-auto px-6 lg:px-12 py-4 flex items-center justify-between">
+                <a href="index.html" class="flex items-center group cursor-pointer">
+                    <img src="element/logo/logo-lubrinum-color.svg" alt="Lubrinum Logo"
+                        class="h-8 w-auto transition-transform duration-500 group-hover:scale-105" />
+                </a>
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-widest uppercase">
+                    <a class="hover:text-primary transition-colors" href="products.html">Products</a>
+                    <a class="hover:text-primary transition-colors" href="technology.html">Technology</a>
+                    <a class="hover:text-primary transition-colors" href="sustainability.html">Sustainability</a>
+                    <a class="hover:text-primary transition-colors" href="solutions.html">Solutions</a>
+                    <a class="text-primary transition-colors" href="about.html">About</a>
+                </div>
+                <div>
+                    <button
+                        class="bg-primary text-brandLight px-6 py-2 rounded-sm font-bold text-xs uppercase tracking-widest hover:bg-white hover:text-brandDark transition-colors">
+                        Contact Engineering
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Navigation -->
+
+        <!-- BEGIN: Hero -->
+        <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-brandDark border-b border-white/5">
+            <div class="nano-grid absolute inset-0 pointer-events-none opacity-50"></div>
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <h1 class="text-5xl md:text-7xl font-bold font-heading uppercase mb-6 tracking-tight text-brandLight">
+                    About Lubrinum
+                </h1>
+                <p class="text-lg md:text-xl text-brandLight/70 max-w-2xl mx-auto font-light">
+                    Founded on the principle that friction is a design flaw, not an inevitability.
+                </p>
+            </div>
+        </header>
+        <!-- END: Hero -->
+
+        <!-- BEGIN: Content -->
+        <section class="py-24 bg-brandLight text-brandDark">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto space-y-12">
+                    <p class="text-2xl font-light leading-relaxed text-secondary border-l-4 border-primary pl-6">
+                        Lubrinum Industrial Group was established to bridge the gap between theoretical nano-physics and
+                        brutal, heavy-industry application. We are a collective of tribologists, mechanical engineers,
+                        and synthetic chemists.
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-12 pt-12 border-t border-brandGray/10">
+                        <div>
+                            <h4 class="font-heading font-bold text-2xl mb-4">Our Mission</h4>
+                            <p class="text-brandGray/80 font-light leading-relaxed">
+                                To categorically eliminate mechanical wear across the automotive, aerospace, and heavy
+                                industrial sectors, paving the way for perpetual motion architectures.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-bold text-2xl mb-4">Our Facilities</h4>
+                            <p class="text-brandGray/80 font-light leading-relaxed">
+                                Headquartered under extreme-condition testing zones, our labs stress-test formulations
+                                beyond standard terrestrial requirements, anticipating the future of engineering.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BEGIN: Footer -->
+        <footer class="bg-brandDark border-t border-white/5 py-20" data-purpose="site-footer">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-4 gap-12 mb-20 text-brandLight">
+                    <div class="col-span-1 md:col-span-2">
+                        <div class="flex items-center mb-8">
+                            <img src="element/logo/logo-lubrinum-mono.svg" alt="Lubrinum Logo Monochrome"
+                                class="h-8 w-auto opacity-90" />
+                        </div>
+                        <p class="text-white/40 max-w-sm text-sm">
+                            Setting the global standard in high-performance tribology and sensory engineering. Perpetual
+                            motion isn't a dream—it's a goal.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-6">Navigation</h4>
+                        <ul class="space-y-4 text-sm text-white/60">
+                            <li><a class="hover:text-white transition-colors" href="products.html">Products</a></li>
+                            <li><a class="hover:text-white transition-colors" href="technology.html">Technology</a></li>
+                            <li><a class="hover:text-white transition-colors"
+                                    href="sustainability.html">Sustainability</a></li>
+                            <li><a class="hover:text-white transition-colors" href="solutions.html">Case Studies</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Vue 3 CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
